@@ -1,0 +1,59 @@
+#lista-transacciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+/* Estructura limpia de filas */
+.tarjeta-transaccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+/* Hover interactivo condicional solicitado */
+.tarjeta-transaccion.ingreso:hover {
+    background-color: #ecfdf5; 
+    color: #065f46;            
+    border-color: #10b981;
+    transform: translateX(4px);
+    cursor: pointer;
+}
+
+.tarjeta-transaccion.gasto:hover {
+    background-color: #fef2f2;   
+    color: #991b1b;              
+    border-color: #ef4444;
+    transform: translateX(4px);
+    cursor: pointer;
+}
+
+.transaccion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.transaccion-categoria {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.transaccion-fecha {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.transaccion-monto {
+    font-size: 1rem;
+    font-weight: 600;
+}
